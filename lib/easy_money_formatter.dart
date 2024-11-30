@@ -24,10 +24,12 @@ extension MoneyFormatter on num {
 
   /// Formats the number in short form (e.g., 1.5K, 2M, 1B).
   String toShortMoney({int precision = 1}) {
-    if (this >= 1000000000)
+    if (this >= 1000000000) {
       return "${(this / 1000000000).toStringAsFixed(precision)}B";
-    if (this >= 1000000)
+    }
+    if (this >= 1000000) {
       return "${(this / 1000000).toStringAsFixed(precision)}M";
+    }
     if (this >= 1000) return "${(this / 1000).toStringAsFixed(precision)}K";
     return toStringAsFixed(precision);
   }
