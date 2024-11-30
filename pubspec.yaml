@@ -1,7 +1,8 @@
 name: easy_money_formatter
 description: A Dart package to format numbers into money-friendly representations.
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+repository: https://github.com/AppFusion-boop/easy_money_formatter
+homepage: https://github.com/AppFusion-boop/easy_money_formatter
 
 environment:
   sdk: ">=3.5.0 <4.0.0"
